@@ -10,10 +10,11 @@ int main() {
     FILE* fp;
     fp = fopen("a.bin", "wb+");
     fwrite(a, sizeof(a), 1, fp);
+    fseek(fp, 0, SEEK_SET);
     fread(arr_read, sizeof(arr_read), 1, fp);
 
     for (int i = 0; i < sizeof(arr_read); i++) {
-        printf("%d", arr_read[i]);
+        printf("%d ", arr_read[i]);
     }
 
     fclose(fp);
