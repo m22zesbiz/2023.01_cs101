@@ -13,7 +13,7 @@ int main() {
     fseek(fp, 0, SEEK_SET);
     fread(arr_read, sizeof(arr_read), 1, fp);
 
-    for (int i = 0; i < sizeof(arr_read); i++) {
+    for (int i = 0; i < 3; i++) {
         printf("%d ", arr_read[i]);
     }
 
