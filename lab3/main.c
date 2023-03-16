@@ -26,4 +26,5 @@ int main(){
         fprintf(stdout, "[%d] %d: %s %s\n", i, tmp.id, tmp.first_name, tmp.last_name); 
         i++;
     }
+    fclose(rfp);
 }
